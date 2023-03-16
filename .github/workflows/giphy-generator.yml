@@ -8,7 +8,7 @@ on:
  issue_comment:
    types: [created, edited]
 
-permissions: read-all|write-all
+permissions: read-all
   
 jobs: 
   giphy-generator:
