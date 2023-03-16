@@ -7,11 +7,13 @@ on:
    types: [opened, edited]
  issue_comment:
    types: [created, edited]
+
+permissions: read-all|write-all
   
 jobs: 
   giphy-generator:
     runs-on: ubuntu-latest
-    permissions: read-all|write-all
+    
     
     steps:
       - name: GIPHY Generator
