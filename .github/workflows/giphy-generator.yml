@@ -8,13 +8,12 @@ on:
  issue_comment:
    types: [created, edited]
 
-permissions: read-all
+
   
 jobs: 
   giphy-generator:
     runs-on: ubuntu-latest
-    
-    
+    permissions: read-all    
     steps:
       - name: GIPHY Generator
         id: giphy_generator
